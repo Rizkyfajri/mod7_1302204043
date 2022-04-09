@@ -33,6 +33,30 @@ namespace mod7_1302204043
                     Console.WriteLine(model.transfer.High_fee);
                 }
 
+                string transfer_met = (model.lang == "id") ? "pilih metode transfer" : "select transfer method";
+                Console.WriteLine(transfer_met);
+                int a = 4;
+                //string[] tipe_trans = { model.Method };
+                //List[] = model.Met    hod
+                //Console.WriteLine(model.Method);
+                //while (a < )
+                //{
+                //  Console.WriteLine(model.transfer.)
+                //}
+                var tipe_trans = model.Method;
+                tipe_trans.ForEach(t =>Console.WriteLine(t));
+                Console.ReadLine();
+                string konfirmasi = (model.lang == "id") ? "konfirmasi" : "confirm";
+                Console.WriteLine(konfirmasi);
+                if (model.lang == "id")
+                {
+                    Console.WriteLine(model.confirm.id);
+                }
+                else
+                {
+                    Console.WriteLine(model.confirm.en);
+                }
+
             }
             catch (Exception ex)
             {
